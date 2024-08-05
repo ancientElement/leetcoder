@@ -39,8 +39,7 @@ def dfs(grid, visited, i, j, m, n):
         return a + 1
 while True:
     try:
-        params = list(map(int,input().split()))
-        m,n = params[0],params[1]
+        m,n  = map(int,input().split())
         grid = [list(map(int,input().split())) for _ in range(m)]
         visited = [[False for _ in range(n)] for _ in range(m)]
         max_size = 0
