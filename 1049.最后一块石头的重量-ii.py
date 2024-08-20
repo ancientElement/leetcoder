@@ -15,6 +15,6 @@ class Solution(object):
         for i in range(len(stones)):
             for j in range(half, stones[i]-1, -1):
                 dp[j] = max(dp[j],dp[j - stones[i]] + stones[i])
-        return half - dp[half]
+        return sum - dp[half] - dp[half]
 # @lc code=end
 
